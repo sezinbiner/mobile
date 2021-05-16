@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img_signup"
+        android:layout_width="136dp"
+        android:layout_height="116dp"
+        android:src="@drawable/signup" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:layout_below="@id/img_signup"
+        android:background="@drawable/custom_input"
+        android:hint="Ad" />
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name"
+        android:hint="Soyad" />
+    <EditText
+        android:id="@+id/gsm"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/surname"
+        android:inputType="phone"
+        android:hint="Tel No" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/gsm"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:hint="Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"/>
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:hint="Tekrar Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button"
+        android:layout_marginLeft="10dp"
+        android:text="Kayıt Ol"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_marginTop="10dp"
+        android:text="Hesabınız var mı? Hemen Giriş Yapın!"
+        />
+
+    <Button
+        android:id="@+id/addPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/img_signup"
+        android:layout_marginLeft="10dp"
+        android:text="Fotoğraf Ekle"
+        android:textColor="@color/primary"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamSettingsActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Süre"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/time_txt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"/>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Puan"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/note_txt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time_txt"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/hard"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Zorluk"
+        android:layout_below="@id/note_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <Spinner
+        android:id="@+id/dropdownHard"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/note_txt"
+        android:layout_marginLeft="150dp"
+        tools:layout_editor_absoluteY="275dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/saveExam"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropdownHard"
+        android:layout_marginLeft="25dp"
+        android:text="Kaydet"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

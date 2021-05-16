@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sezin_Biner_17011029</string>
+
+    <string-array name="answersList">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="hardnessList">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

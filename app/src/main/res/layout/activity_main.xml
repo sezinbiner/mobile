@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:paddingLeft="100dp"
+        android:src="@drawable/img" />
+
+    <EditText
+        android:id="@+id/userNameLogin"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:paddingStart="12dp"
+        android:hint="E-mail"
+        android:textSize="20dp"
+        android:ems="10"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/user_img"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/img" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:paddingStart="12dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:ems="10"
+        android:layout_below="@id/userNameLogin"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:inputType="textPassword"
+        android:hint="Şifre" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:layout_marginLeft="20dp"
+        android:text="Giriş"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/passwordLogin"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnSignUpInLogin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:text="Hesabınız yok mu? Hemen Kayıt Olun!"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/primary"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="25dp"/>
+
+</RelativeLayout>
